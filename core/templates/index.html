@@ -1,0 +1,113 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>RAMENYA — Японский рамен</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'styles/index.css' %}">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">RAMENYA</div>
+      <nav class="nav">
+        <a href="#">Меню</a>
+        <a href="#">О нас</a>
+        <a href="#">Доставка</a>
+        <a href="#">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <video
+      class="hero-video"
+      autoplay
+      muted
+      loop
+      playsinline
+    >
+      <source src="{% static 'videos/cooking.mp4' %}" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <h1>Настоящий японский рамен</h1>
+      <p>Медленный бульон. Свежая лапша. Идеальный вкус.</p>
+      <a href="#" class="btn-primary">Смотреть меню</a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="container features-grid">
+      <div class="feature">
+        <h3>12 часов бульон</h3>
+        <p>Варим на медленном огне для глубокого вкуса</p>
+      </div>
+      <div class="feature">
+        <h3>Свежая лапша</h3>
+        <p>Готовим каждый день вручную</p>
+      </div>
+      <div class="feature">
+        <h3>Доставка 30 минут</h3>
+        <p>Горячо и вовремя</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Ramen -->
+  <section class="ramen">
+    <div class="container">
+      <h2>Популярные рамены</h2>
+
+      <div class="ramen-grid">
+        <div class="ramen-card">
+          <img src="{% static 'images/tonkotsu.jpg' %}" alt="Tonkotsu">
+          <h4>Tonkotsu</h4>
+          <p>Насыщенный свиной бульон</p>
+          <span>590 сом</span>
+        </div>
+
+        <div class="ramen-card">
+          <img src="{% static 'images/shoyu.jpg' %}" alt="Shoyu">
+          <h4>Shoyu</h4>
+          <p>Куриный бульон и соевый соус</p>
+          <span>520 сом</span>
+        </div>
+
+        <div class="ramen-card">
+          <img src="{% static 'images/miso.webp' %}" alt="Miso">
+          <h4>Miso</h4>
+          <p>Глубокий вкус мисо</p>
+          <span>550 сом</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container cta-content">
+      <h2>Готовы попробовать?</h2>
+      <p>Закажите прямо сейчас и почувствуйте Японию</p>
+      <a href="#" class="btn-secondary">Заказать</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 RAMENYA</p>
+      <p>Бишкек • Доставка ежедневно</p>
+    </div>
+  </footer>
+
+</body>
+</html>
