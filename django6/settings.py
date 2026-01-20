@@ -13,7 +13,7 @@ SECRET_KEY = 'django-insecure-@(6l=e6x_ag#a7-wc%u9+jrn!cae1)hjif&#gve63ssc#uon7_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sultantlgnv0303.pythonanywhere.com']
 
 
 # Application definition
@@ -109,4 +109,5 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
 
-# STATIC-ROOT = BASE-DIR / 'static'
+
+STATIC-ROOT = BASE_DIR / 'staticfiles'
