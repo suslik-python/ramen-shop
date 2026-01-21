@@ -110,4 +110,4 @@ STATICFILES_DIRS = [
 ]
 
 
-STATIC-ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
